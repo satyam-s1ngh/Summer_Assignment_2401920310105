@@ -2,6 +2,6 @@ This repository contains files for Summer Assignment for DSA and OOPS for 3rd ye
 
 Name: Satyam Singh
 
-Admission No.: 24121cn027
+Admission No.: 24121CN027
 
 Roll No.: 2401920310105
