@@ -1,38 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
 
-class ListNode{
-    public:
-        int val;
-        ListNode* next;
-        ListNode(int d,ListNode* n){
-            val=d;
-            next=n;
-        }
-        ListNode(int d){
-            val=d;
-            next=nullptr;
-        }
-    };
-
-ListNode* createLL(vector<int> arr){
-    ListNode* head= new ListNode(arr[0]);
-    ListNode* m=head;
-    for(int i=1;i<arr.size();i++){
-        ListNode* temp=new ListNode(arr[i]);
-        m->next=temp;    
-        m=m->next;
-    }
-    return head;
-}
-
-void printLL(ListNode* head){
-    ListNode* temp=head;
-    while(temp!=nullptr){
-        cout << temp->val << " ";
-        temp=temp->next;
-    }
-}
 
 class Solution {
 public:
@@ -67,13 +33,3 @@ public:
     }
 };
 
-int main(){
-    vector<int> v1={1,2,4};
-    vector<int> v2={1,3,4};
-    ListNode* head1=createLL(v1);
-    ListNode* head2=createLL(v2);
-    Solution ob;
-    ListNode* head=ob.mergeTwoLists(head1,head2);
-    printLL(head);
-    return 0;
-}
